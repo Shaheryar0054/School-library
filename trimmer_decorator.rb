@@ -1,9 +1,12 @@
-require './base_decorator'
+require_relative 'base_decorator'
 
 class TrimmerDecorator < BaseDecorator
-  def correct_name
-    return unless @nameable.correct_name.length > 10
+  def initialize(nameable)
+    super(nameable)
+    @nameable = nameable
+  end
 
-    @nameable.correct_name[0..9]
+  def correct_name
+    @nameable.correct_name[0...10]
   end
 end
