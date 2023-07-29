@@ -71,7 +71,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:baqar-abbas/school-library.git
+  git https://github.com/Shaheryar0054/School-library.git
 ```
 
 ### Usage
